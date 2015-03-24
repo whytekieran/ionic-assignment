@@ -1,0 +1,30 @@
+
+ .aboutpage
+ {
+    background-color: #030303;
+ }
+
+ #abouttext
+ {
+    color: #FCFAFC;
+ }
+
+ #abouthead
+ {
+    color: #FCFAFC;
+    text-align: center;
+ }
+
+ #aboutmaincontent
+ {
+    height:125px;
+    width:290px;
+    text-align:center;
+ }
+
+ #aboutpicture
+ {
+    height300px;
+    width:140px;
+    margin:20px;
+ }
