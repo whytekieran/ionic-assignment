@@ -1,30 +1,38 @@
+/*CSS page containing styling for the ionic assignment*/
 
+/*aboutpage class CSS make background black*/
  .aboutpage
  {
     background-color: #030303;
  }
 
+/*make text for about page white*/
  #abouttext
  {
-    color: #FCFAFC;
+    color: #FCFAFC;/*colour white*/
  }
 
+/*about head div make all text centered and white*/
  #abouthead
  {
     color: #FCFAFC;
-    text-align: center;
+    text-align: center;/*aligning text*/
  }
 
+/*make the size of the maincontent dive 125x290px and align text center*/
  #aboutmaincontent
  {
     height:125px;
-    width:290px;
+    width:290px;/*css stylings*/
     text-align:center;
  }
 
+/*set the height and width of the image and give it a margin*/
  #aboutpicture
  {
     height300px;
-    width:140px;
+    width:140px;/*css image stylings*/
     margin:20px;
  }
+
+/*end of css*/

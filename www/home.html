@@ -1,106 +1,111 @@
+<!--create new ion view and content to hold the template-->
 <ion-view>
 <ion-content>
- <br/>
+ <br/><!--insert some line breaks to push content down the page-->
  <br/>
 
- <div class="list">
+ <div class="list"><!--create a new div of class list, list is an ionic prebuild                    class designed to give a list view-->
 
-   <div class="item item-divider">
-   <b> Appetisers</b>
+   <div class="item item-divider"> <!--item divider divides list into sections-->
+   <b> Appetisers</b> <!--appetisers sections-->
    </div>
 
-   <a class="item item-thumbnail-left" href="#/soup">
+<!--list item, this is a thumbnail item containing a thumbnail image to the left and the text to the right, each item linking to its own template -->
+   <a class="item item-thumbnail-left" ui-sref="soup"><!--ui-sref link-->
       <img src="img/types-of-soup.jpg">
-      <h2>Vegetable Soup</h2>
-      <p>80 Calories</p>
-<!-- <ion-nav-view name="soup"></ion-nav-view>-->
-    </a>
-  <ion-nav-view name="soup"></ion-nav-view>
+      <h2>Vegetable Soup</h2><!-- main text for the item is vegetable soup-->
+      <p>80 Calories</p><!--smaller text for calories-->
+    </a><!--item ends here-->
 
-     <a class="item item-thumbnail-left" href="#">
-      <img src="img/Cocktail_1_bg_060702.jpg">
+    <!--new item-->
+     <a class="item item-thumbnail-left" ui-sref="prawn">
+      <img src="img/Cocktail_1_bg_060702.jpg"><!--prawn cocktail item-->
       <h2>Prawn Cocktail</h2>
       <p>210 Calories</p>
-    </a>
+    </a><!--end item-->
 
-    <a class="item item-thumbnail-left" href="#">
+    <a class="item item-thumbnail-left" ui-sref="roll">
       <img src="img/springroll-china_0.jpg">
-      <h2>Spring Roll</h2>
+      <h2>Spring Roll</h2>         <!--spring roll item-->
       <p>165 Calories</p>
     </a>
 
-   <div class="item item-divider">
-   <b> Main Courses</b>
+   <div class="item item-divider"><!-- item divider, -->
+   <b> Main Courses</b><!--main courses item divider in bold-->
    </div>
 
-    <a class="item item-thumbnail-left" href="#">
+    <a class="item item-thumbnail-left" ui-sref="lasange">
       <img src="img/lasagna15.jpg">
-      <h2>Lasange</h2>
+      <h2>Lasange</h2>                 <!--lasange item-->
       <p>400 Calories</p>
     </a>
 
-     <a class="item item-thumbnail-left" href="#">
+     <a class="item item-thumbnail-left" ui-sref="curry">
       <img src="img/chicken-curry-recipe.jpg">
-      <h2>Chicken Curry</h2>
+      <h2>Chicken Curry</h2>               <!--chicken curry item -->
       <p>340 Calories</p>
     </a>
 
-     <a class="item item-thumbnail-left" href="#">
+<!--all items containing an image along with text-->
+     <a class="item item-thumbnail-left" ui-sref="kebab">
       <img src="img/doner-kebab.jpg">
-      <h2>Doner Kebab</h2>
+      <h2>Doner Kebab</h2>                <!--doner kebab item-->
       <p>785 Calories</p>
     </a>
 
 
-     <a class="item item-thumbnail-left" href="#">
+     <a class="item item-thumbnail-left" ui-sref="burgerandchip">
       <img src="img/photo-13.jpg">
-      <h2>Cheeseburger and chips</h2>
+      <h2>Cheeseburger and chips</h2>        <!--burger and chips item-->
       <p>550 Calories</p>
     </a>
 
-   <div class="item item-divider">
-   <b> Deserts</b>
+   <div class="item item-divider"><!--item divider-->
+   <b> Deserts</b><!--deserts item divider in bold-->
    </div>
 
-    <a class="item item-thumbnail-left" href="#">
+    <a class="item item-thumbnail-left" ui-sref="doughnut">
       <img src="img/sublime-doughnuts-atlanta-01.jpg">
-      <h2>Doughnut</h2>
+      <h2>Doughnut</h2>                      <!--doughnut item-->
       <p>245 Calories</p>
     </a>
 
-    <a class="item item-thumbnail-left" href="#">
+    <a class="item item-thumbnail-left" ui-sref="pie">
       <img src="img/Tuaca-hot-apple-pie-3.jpg">
-      <h2>Apple Pie</h2>
+      <h2>Apple Pie</h2>            <!--apple pie-->
       <p>390 Calories</p>
     </a>
 
-     <a class="item item-thumbnail-left" href="#">
+     <a class="item item-thumbnail-left" ui-sref="cheesecake">
       <img src="img/cheesecake_main1.jpg">
       <h2>Cheesecake</h2>
-      <p>410 Calories</p>
+      <p>410 Calories</p>           <!--cheesecake-->
     </a>
 
-    <a class="item item-thumbnail-left" href="#">
+    <a class="item item-thumbnail-left" ui-sref="icecream">
       <img src="img/ice-cream-in-a-bowl.jpg">
-      <h2>Ice Cream</h2>
-      <p>465 Calories</p>
+      <h2>Ice Cream</h2>                               <!--ice cream item-->
+      <p>465 Calories</p>   
     </a>
 
    <div class="item item-divider">
-   <b> Sweets</b>
-   </div>
+   <b> Sweets</b>                <!--sweets item divider-->
+   </div> 
 
-    <a class="item item-thumbnail-left" href="#">
+    <a class="item item-thumbnail-left" ui-sref="chocolate">
      <img src="img/Chocolate-truffles.jpg">
-     <h2>Chocolate</h2>
+     <h2>Chocolate</h2>                       <!--chocolate item-->
      <p>400 Calories</p>
    </a>
 
-    <a class="item item-thumbnail-left" href="#">
+    <a class="item item-thumbnail-left" ui-sref="crisps">
      <img src="img/potato-chips.jpg">
-     <h2>Crisps</h2>
+     <h2>Crisps</h2>                          <!--crisps item-->
      <p>425 Calories</p>
-   </a>
-</div>
+   </a>                                 <!--last item-->
+</div>                                    <!--end list-->
 <ion-content>
-<ion-view>
+<ion-view>                             <!--end ion view and content-->
+
+
+

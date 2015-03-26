@@ -1,14 +1,19 @@
- <div class="bar bar-header bar-dark">
-  <h1 class="title">CALORIFIC</h1>
- </div>
-        
- <ion-tabs class="tabs-icon-top tabs-dark">
-    <ion-tab title="Home" icon="ion-home" href="#/tabs/home">
-    <ion-nav-view name="home-tab"></ion-nav-view>
-    </ion-tab>
 
+<!--Tabs.html template contains header bar set to black and "calorific" title
+inside the bar-->
+ <div class="bar bar-header bar-dark">
+  <h1 class="title">CALORIFIC</h1><!--title-->
+ </div>
+    
+<!--contains ion tab bar set at page footer with two tab items. Each tab contains an ion-nav-view and a href link both the home.html and the about.html are displayed through these ion-nav-views-->    
+ <ion-tabs class="tabs-icon-top tabs-dark"><!--icon tabs set to black-->
+    <ion-tab title="Home" icon="ion-home" href="#/tabs/home">
+    <ion-nav-view name="home-tab"></ion-nav-view><!--nav view-->
+    </ion-tab><!--end first tab-->
+                               <!--ties in with the app.js-->
+   <!--start of second tab-->                        <!--href link below-->
     <ion-tab title="About" icon="ion-ios-information" href="#/tabs/about">
-    <ion-nav-view name="about-tab"></ion-nav-view>
+    <ion-nav-view name="about-tab"></ion-nav-view><!--nav view-->
     </ion-tab>
  </ion-tabs>
 

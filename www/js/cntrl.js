@@ -1,6 +1,8 @@
  
  angular.module('calorific.cntrl', []) 
 
+//controller for the home templates list view holding the text and image
+//values for each item
  .controller('FoodCtrl', function($scope) {
   $scope.dishes = [
     { title: 'Soup', pic: 'types-of-soup.jpg' },
