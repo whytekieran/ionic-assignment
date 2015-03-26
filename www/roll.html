@@ -5,15 +5,26 @@
  <br/>
  <br/><!--line break to push content-->
  <br/>
- <!--new button with styling that links back to the home page-->
- <button class="button button-dark" ui-sref="tabs.home"><!--ui-sref link-->
-   Back to home<!--text for inside of button-->
- </button>
 
+ <!--new button with styling that links back to the home page-->
+ <div>
+  <button class="button button-dark" ui-sref="tabs.home"><!--ui-sref link-->
+    Back to home<!--text for inside of button-->
+  </button>
+ </div>
+
+<!--new div to hold image of food-->
   <div>
   <img src="img/Curried_Chicken_Spring_Roll.jpg" alt="roll" style="width:250px;height:200px">
  </div>
 
+ <!--Form controlled with radio buttons containing different calory sizes for portions, using controller-->
+ <form name="FoodForm">
+  <input type="radio" ng-model="portion.size" value="110">Small Portion <br/>
+  <input type="radio" ng-model="portion.size" value="165">Medium Portion <br/>
+  <input type="radio" ng-model="portion.size" value="340">Large Portion <br/>
+  <tt>Calories = {{portion.size | json }}</tt><br/><!--output with controller-->
+ </form>
 
 </ion-content>
 </ion-view><!--close ion view and content tags-->

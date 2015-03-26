@@ -6,4 +6,4 @@ different foods and the average calory amounts. Displayed in a tab layout there
 is also an about page which describes the app itself. ..The user can click on
 each food and they will be shown a a list of ingredients and a recipe for the
 paticular food, as well as a small dynamic selection allowing the user to choose
-how may calories for which amount of food.  
+how may calories for which amount of food. Multiple branches and commits to github were made on the project and the prject is also availible on my github account. 

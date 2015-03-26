@@ -7,14 +7,24 @@
  <br/>
 
 <!--button to link back to the home page with styling-->
- <button class="button button-dark" ui-sref="tabs.home">
-   Back to home
- </button>
+ <div>
+  <button class="button button-dark" ui-sref="tabs.home">
+    Back to home
+  </button>
+ </div>
 
-  <div>
+<!--new div which holds an image along with inline style css attibutes-->
+ <div>
   <img src="img/donuts.jpg" alt="doughnut" style="width:250px;height:200px">
  </div>
- 
+
+ <!--Form controlled with radio buttons containing different calory sizes for portions, using controller-->
+ <form name="FoodForm">
+  <input type="radio" ng-model="portion.size" value="100">Small Portion <br/>
+  <input type="radio" ng-model="portion.size" value="245">Medium Portion <br/>
+  <input type="radio" ng-model="portion.size" value="560">Large Portion <br/>
+  <tt>Calories = {{portion.size | json }}</tt><br/><!--output with controller-->
+ </form>
 
 </ion-content>
 </ion-view><!--close ion view and content tags-->
