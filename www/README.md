@@ -1,5 +1,5 @@
 
-
+                           READ ME FILE FOR PROJECT
 
   The calorific app is designed as my project, it displays a selection of 
 different foods and the average calory amounts. Displayed in a tab layout there
@@ -19,7 +19,7 @@ The project can be viewed on my github account at the following address:
 
 3)The app is extremely usable and is very straight forward to interact with for a user
 
-4)There nare dynamic elements for the user to interact with
+4)There are dynamic elements for the user to interact with
 
 5)Ive shown that ive attempted to manage my source code using standard tools
 There have also been multiple branches and commits to my github account with this project.
