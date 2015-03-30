@@ -35,4 +35,17 @@
     margin:20px;
  }
 
+/*make background color for all the food pages black*/
+ .foodpage
+ {
+    background-color: #000000;
+ } 
+
+/*make text for food page white*/ 
+ .foodcontent
+ {
+    color: #FFFFFF;
+    font-size: 17px;
+ }
+
 /*end of css*/

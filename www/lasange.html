@@ -1,30 +1,80 @@
 <!--new ion view and content which hold this template   -->
 <ion-view>
-<ion-content>
+<ion-content class="foodpage">
 
  <br/>
- <br/><!--line breaks pushing down content-->
- <br/>
+ <br/><!--line breaks-->
 
-<!--new button which links back to the homepage-->
- <div>
-  <button class="button button-dark" ui-sref="tabs.home">
-    Back to home <!--text of the button-->
-  </button>
+ <!--header bar-->
+ <div class="bar bar-header bar-stable">
+  <h1 class="title"><b>Lasange</b></h1>
  </div>
 
 <!--new div which holds the image of the food, given its own inline css styling inside the img tag itself-->
   <div>
-  <img src="img/lasagna15.jpg.1" alt="lasange" style="width:250px;height:200px">
+  <img src="img/lasagna15.jpg.1" alt="lasange" style="width:300px;height:200px">
  </div>
  
-<!--Form controlled with radio buttons containing different calory sizes for portions, using controller-->
- <form name="FoodForm">
-  <input type="radio" ng-model="portion.size" value="233">Small Portion <br/>
-  <input type="radio" ng-model="portion.size" value="400">Medium Portion <br/>
-  <input type="radio" ng-model="portion.size" value="730">Large Portion <br/>
-  <tt>Calories = {{portion.size | json }}</tt><br/><!--output with controller-->
- </form>
+ <!--div with preformatted text and css ctyling to hold the foods ingredients-->
+ <div class="foodcontent">
+  <pre><!--preformatted text tag-->
+ <b> Ingredients</b>
+Tomato meat sauce:
+2 28 oz. cans tomatoes
+1-2 tbsp tomato paste
+1 large onion
+2 cloves garlic
+1 lb. ground beef, preferably lean
+dried oregano                           <!--ingredients-->
+crushed red pepper
+salt and pepper
+fresh basil - dried can also be substituted
 
+For the rest of the lasagna:
+1 package of noodles (should be around a pound in weight)
+1 lb. mozzarella
+1/2 lb. good quality parmesan
+1 lb. ricotta cheese
+  </pre>
+ </div>
+
+ <!--new button which links back to the homepage-->
+ <div>
+  <button class="button button-royal" ui-sref="tabs.home">
+    Back to home <!--text of the button-->
+  </button>
+ </div>
+
+  <!--Form controlled with radio buttons containing different calory sizes for portions, using controller-->
+ <div class="list"><!--create a new list-->
+
+  <label class="item item-radio"><!--new radio button with ng-model-->
+    <input type="radio" name="group" ng-model="portion.size" value="236">
+    <div class="item-content">
+      Small Portion<!--text inside the button-->
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <!--second radio button-->
+  <label class="item item-radio">
+    <input type="radio" name="group" ng-model="portion.size" value="400">
+    <div class="item-content">
+      Medium Portion
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+<!--value displays the outputted value when clicked-->
+   <label class="item item-radio">
+    <input type="radio" name="group" ng-model="portion.size" value="785">
+    <div class="item-content">
+      Large Portion
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+<tt>CALORIES: {{portion.size | json }}</tt><br/><!--output with controller-->
+  </label><!--last radio button closing-->
+
+ </div><!--closing tag for list div-->
 </ion-content>
 </ion-view><!--end ion view and content-->

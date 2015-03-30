@@ -1,30 +1,79 @@
 
 <ion-view><!--create and new ion view and content to hold the template-->
-<ion-content>
- 
- <br/>
- <br/><!--line breakes-->
- <br/>
+<ion-content class="foodpage">
 
-<!--create new button which links back to the home page with styling-->
- <div>
-  <button class="button button-dark" ui-sref="tabs.home">
-    Back to home <!--text for inside the button-->
-  </button>
+ <br/>
+ <br/><!--line breaks-->
+
+ <!--header bar-->
+ <div class="bar bar-header bar-stable">
+  <h1 class="title"><b>Chicken Curry</b></h1>
  </div>
 
 <!--create new div which holds the image of the food along with css inline style attributes-->  
  <div>
-  <img src="img/curry_1973006b.jpg" alt="curry" style="width:250px;height:200px">
+  <img src="img/curry_1973006b.jpg" alt="curry" style="width:300px;height:200px">
+ </div>
+
+<!--new div with pre-formatted text holding the food ingredients-->
+  <div class="foodcontent"><!--class for css styling-->
+  <pre>
+ <b> Ingredients</b>
+1 large onion
+6 garlic cloves, roughly chopped
+50g ginger, roughly chopped
+4 tbsp vegetable oil
+2 tsp cumin seeds         <!--ingredients-->
+1 tsp fennel seed
+5cm cinnamon stick
+1 tsp chilli flakes
+1 tsp garam masala
+1 tsp turmeric
+1 tsp caster sugar
+400g can chopped tomatoes
+8 chicken thighs, skinned, boneless (about 800g)
+250ml hot chicken stock
+2 tbsp chopped coriander
+  </pre>
  </div>
  
- <!--Form controlled with radio buttons containing different calory sizes for portions, using controller-->
- <form name="FoodForm">
-  <input type="radio" ng-model="portion.size" value="110">Small Portion <br/>
-  <input type="radio" ng-model="portion.size" value="340">Medium Portion <br/>
-  <input type="radio" ng-model="portion.size" value="780">Large Portion <br/>
-  <tt>Calories = {{portion.size | json }}</tt><br/><!--output with controller-->
- </form>
+  <!--create new button which links back to the home page with styling-->
+ <div>
+  <button class="button button-royal" ui-sref="tabs.home">
+    Back to home <!--text for inside the button-->
+  </button>
+ </div>
 
+  <!--Form controlled with radio buttons containing different calory sizes for portions, using controller-->
+ <div class="list"><!--create a new list-->
+
+  <label class="item item-radio"><!--new radio button with ng-model-->
+    <input type="radio" name="group" ng-model="portion.size" value="110">
+    <div class="item-content">
+      Small Portion<!--text inside the button-->
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+  <!--second radio button-->
+  <label class="item item-radio">
+    <input type="radio" name="group" ng-model="portion.size" value="340">
+    <div class="item-content">
+      Medium Portion
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+
+<!--value displays the outputted value when clicked-->
+   <label class="item item-radio">
+    <input type="radio" name="group" ng-model="portion.size" value="780">
+    <div class="item-content">
+      Large Portion
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+   <b><tt>CALORIES: {{portion.size | json }}</b></tt><br/><!--output with controller-->
+  </label><!--last radio button closing-->
+
+ </div><!--closing tag for list div-->
 </ion-content>
 </ion-view><!--end ion content and view-->
