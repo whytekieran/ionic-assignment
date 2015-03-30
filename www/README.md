@@ -25,6 +25,7 @@ The project can be viewed on my github account at the following address:
 There have also been multiple branches and commits to my github account with this project.
 
 I have also used a little external CSS
+When i run the project in Google Chrome, i set the width of the window to its smallest, the app has been tested in this configuration
 
 Thanks for everything Ian and Eamon
 
