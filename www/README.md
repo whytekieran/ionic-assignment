@@ -10,6 +10,8 @@ The project can be viewed on my github account at the following address:
 
  https://github.com/whytekieran/ionic-assignment
 
+If you do wish to fork my project from github...the finished version of the project is contained inside the "FinishedProject" branch.
+
 
 -After completing this project i can say safely that i have covered all areas of the specification.
 
